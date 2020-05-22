@@ -165,7 +165,7 @@ footer {
 
 header .content-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
@@ -180,7 +180,7 @@ header nav {
   font-size: 1.125em;
   font-weight: 400;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
 }
@@ -188,7 +188,7 @@ header nav {
 header nav ul {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 header nav ul li {
@@ -227,10 +227,6 @@ footer .social-icons p {
 /* -------------- Mobile Styles -------------- */
 /* Hero Area Mobile */
 .hero-area {
-  background-color: #
-  background-size: cover;
-  background-position: bottom;
-  background-blend-mode: luminosity;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,14 +246,6 @@ footer .social-icons p {
 }
 
 /* About Mobile*/
-
-.about .content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-}
-
 .about {
   display: flex;
   justify-content: center;
@@ -265,29 +253,14 @@ footer .social-icons p {
   flex-flow: row wrap;
 }
 
-.about h2 {
-  text-align: center;
-}
-
-.about p {
-  margin: 40px;
-  padding-right: 50px;
-  font-size: 1.5em;
+.about .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 
-.jen-left {
-  background: url('../img/headshot.png');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
-.bio-right,
-.jen-left {
-  width: 100%;
-  height: 75vh;
-}
 
 /* Skillz Mobile */
 
@@ -467,15 +440,17 @@ footer .social-icons p {
   }
 
   /* About Tablet */
-  .about .col-md-6-no-gutters {
-    min-height: 100%;
+  .about article figure,
+  .about div {
+    width: 150%;
   }
 
-  .about .col-md-6-no-gutters {
+  .about article {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
   }
+
+
 
   /* Skillz Tablet */
   .skillz h2 {
