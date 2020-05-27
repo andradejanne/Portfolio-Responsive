@@ -678,10 +678,14 @@ footer .social-icons p {
     font-size: 3em;
   }
 
-  .work p {
-    font-size: 1.125em;
-    line-height: 1;
+  .work article {
+    width: 85%;
   }
+
+  .work p {
+    font-size: 1.2em;
+  }
+
 
   /*Footer Desktop */
   footer .content-wrapper {
