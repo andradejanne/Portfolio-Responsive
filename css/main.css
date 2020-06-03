@@ -115,25 +115,25 @@ ol {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #5D5DD4;
 }
 
 h1 span {
-  font-family: 'Sacramento', cursive;
   font-size: 1.75em;
-  color: #1f1f2e;
 }
 
 h2 {
   font-family: 'Spartan', serif;
-  font-size: 2.5em;
-  font-weight: lighter;
+  font-size: 3em;
+  font-weight: 500;
+  color: #2b2ba1;
 }
 
 h3 {
   font-family: 'Spartan', serif;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: lighter;
+  color: #2b2ba1;
 }
 
 h4 {
@@ -166,7 +166,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #088b99;
+  background-color: #ececf8;
 }
 
 header .content-wrapper {
@@ -175,6 +175,7 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  border-bottom: 1px solid #5D5DD4;
 }
 
 header {
@@ -183,23 +184,19 @@ header {
 
 header nav {
   width: 100%;
-  font-size: 1.125em;
-  font-weight: 100;
+  font-size: 1em;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
+  text-align: center;
 }
 
 header nav ul {
-  width: 100%;
+  width: 80%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-}
-
-header nav ul li {
-  font-size: 1.125em;
 }
 
 
@@ -213,7 +210,7 @@ footer p{
 }
 
 footer h4 {
-  color: #fff;
+  color: #5D5DD4;
 }
 
 footer .content-wrapper {
@@ -241,11 +238,11 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
   min-height: 500px;
 }
 
 .hero-area .content-wrapper {
+  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,7 +250,15 @@ footer .social-icons p {
 
 .hero-area h1 {
   font-weight: 500;
-  line-height: 1em;
+  color: #2b2ba1;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.hero-area span {
+  font-family: 'Megrim', cursive;
+  font-weight: 200;
+  color: #5D5DD4;
 }
 
 /* About Mobile*/
@@ -273,16 +278,12 @@ footer .social-icons p {
 
 
 .about .content-wrapper {
-  border: 1px solid #E5A622;
+  border: 1px solid  #2b2ba1;
   border-bottom-right-radius: 20em 6em;
   border-top-width: medium;
   border-bottom-width: medium;
   padding: 20px 12px;
   position: relative;
-}
-
-.about h2 {
-  color: #088B99 ;
 }
 
 
@@ -295,7 +296,7 @@ footer .social-icons p {
 }
 
 .skillz .content-wrapper {
-  border: 1px solid #E53C22;
+  border: 1px solid #2b2ba1;
   border-bottom-width: medium;
   border-top-width: medium;
   border-top-left-radius: 20em 6em;
@@ -313,7 +314,7 @@ footer .social-icons p {
 
 .skillz h2 {
   text-align: right;
-  color: #088B99;
+  font-size: 3em;
 }
 
 .skillz h3 {
@@ -330,12 +331,12 @@ footer .social-icons p {
   padding: 20px 0 20px;
   text-align: center;
   font-size: .95em;
-  color: #088B99;
+  color: #5D5DD4;
 }
 
 .skillz i {
   font-size: 2.75em;
-  color: #E53C22;
+  color: #2b2ba1;
 }
 
 /* Work Mobile */
@@ -354,7 +355,7 @@ footer .social-icons p {
 }
 
 .work .content-wrapper {
-  border: 1px solid #E5A622;
+  border: 1px solid #2b2ba1;
   border-top-left-radius: 20em 6em;
   border-bottom-right-radius: 20em 6em;
   border-top-width: medium;
@@ -372,19 +373,14 @@ footer .social-icons p {
   padding: 15px 0 15px;
 }
 
-.work h2 {
-  text-align: center;
-  color: #088B99;
-}
-
-.work h3 {
-  color: #E53C22;
+.work h2,
+.work h3,
+.work p {
   text-align: center;
 }
 
 .work p {
-  text-align: center;
-  color: #088B99;
+  line-height: 1.5em;
 }
 
 .work figure {
@@ -499,21 +495,24 @@ footer .social-icons p {
   /* Header Tablet */
   header {
     justify-content: space-around;
-    padding: 30px 0;
+    align-items: center;
   }
 
   header .content-wrapper {
-    width: 100%;
+    width: 60%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+
   }
 
   header nav {
-    width: 50%;
+    width: 60%;
   }
 
   header nav ul {
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
   }
 
   /* Footer Tablet */
@@ -535,12 +534,12 @@ footer .social-icons p {
 
   /* Hero Area Tablet */
   .hero-area {
-    min-height: 500px;
+    min-height: 550px;
   }
 
   .hero-area h1 {
     margin: 0;
-    text-align: right;
+    text-align: center;
     font-size: 2em;
     line-height: 1;
   }
@@ -586,7 +585,7 @@ footer .social-icons p {
   /* Footer */
   footer .content-wrapper {
     width: 65%;
-    margin: 100px 0;
+    margin: 30px 0;
   }
 
   footer .footer-content {
@@ -619,6 +618,11 @@ footer .social-icons p {
     width: 85%;
   }
 
+  .work p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+
 
 }
 
@@ -628,6 +632,11 @@ footer .social-icons p {
     max-width: 960px;
   }
 
+  header .content-wrapper {
+    width: 50%;
+  }
+
+
   /* Hero Desktop */
   .hero-area h1 {
     width: 100%;
@@ -635,7 +644,7 @@ footer .social-icons p {
   }
 
   .hero-area {
-    min-height: 750px;
+    min-height: 800px;
   }
 
   /* About Desktop */
@@ -672,25 +681,29 @@ footer .social-icons p {
     padding: 30px 0;
   }
 
-  /*Portfolio Desktop */
+  /*Work Desktop */
   .work h2{
     width: 100%;
     font-size: 3em;
   }
 
+  .work h3 {
+    font-size: 1.875em;
+  }
+
   .work article {
-    width: 85%;
+    width: 75%;
   }
 
   .work p {
-    font-size: 1.2em;
+    font-size: 1.25em;
   }
 
 
   /*Footer Desktop */
   footer .content-wrapper {
     width: 70%;
-    margin: 100px 0;
+    margin: 30px 0;
   }
 
 }
